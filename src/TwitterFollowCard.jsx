@@ -1,4 +1,5 @@
 export function TwitterFollowCard ({userName, name, isFollowing}){
+    console.log(isFollowing)
    return(
     <article className='tw-follow-card'>
             <header className='tw-follow-card-header'>

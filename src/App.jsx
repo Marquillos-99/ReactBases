@@ -2,9 +2,11 @@ import './App.css'
 import { TwitterFollowCard } from './TwitterFollowCard'
 export function App (){
     return(
-        <>
-            <TwitterFollowCard userName='batman' name='Batman' isFollowing='true'/>
-            <TwitterFollowCard userName='marcos' name='Marcos' isFollowing='true'/>
-        </>
+        <section className='App'>
+            <TwitterFollowCard userName='batman' name='Batman' isFollowing/>
+            <TwitterFollowCard userName='marcos' name='Marcos' isFollowing={true}/>
+            <TwitterFollowCard userName='purples' name='Shmin' isFollowing={false}/>
+            <TwitterFollowCard userName='omarfierro' name='Omar' isFollowing={false}/>
+        </section>
     )
 }
